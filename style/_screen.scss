@@ -1,6 +1,7 @@
 @import './variables';
 
 .screen-container {
+    position: relative;
     border: 3px solid $backgroundButtonsDisplay;
     margin-right: 30px;
     width: 100%;
@@ -11,10 +12,16 @@
         display: flex;
         justify-content: space-between;
         border-bottom: 3px solid $backgroundButtonsDisplay;
+        height: 100%;
+        max-height: 370px;
 
         .leftside-screen {
             width: 100%;
             padding: 20px;
+
+            .title-your-vote {
+                display: none;
+            }
 
             h2 {
                 font-weight: normal;
@@ -49,11 +56,25 @@
                         input[type=number]::-webkit-inner-spin-button {
                             appearance: none;
                         }
+
+                        input[data-opacity=true] {
+                            animation: opacityInputAnimation 0.6s ease-in-out infinite alternate;
+                        }
                     }
 
                     // Nome e partido do titular
                     .dd {
+                        display: none;
                         margin: 5px 0;
+                    }
+
+                    .showVoteType {
+                        display: none;
+                        animation: opacityInputAnimation 0.6s ease-in-out infinite alternate;
+
+                        h2 {
+                            font-size: 3rem
+                        }
                     }
                 }
             }
@@ -61,6 +82,7 @@
 
         .rightside-screen {
             @include flexboxColummEnd;
+            display: none;
             padding: 5px;
 
             .topBiggerImage {
@@ -71,13 +93,14 @@
                 img {
                     width: 100%;
                     height: 100%;
-                    max-height: 200px;
+                    max-height: 180px;
                     object-fit: cover;
                     object-position: 0 0;
                 }
             }
 
             .bottomSmallImage {
+                display: none;
                 width: 80%;
                 margin-top: 5px;
                 border: 2px solid $backgroundButtonsDisplay;
@@ -95,7 +118,33 @@
         }
     }
 
+    .end-popup {
+        @include flexbox;
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: $linearGradientScreen;
+        animation: opacityInputAnimation 0.6s ease-in-out infinite alternate;
+
+        h2 {
+            font-size: 2.5rem;
+        }
+    }
+
     .help-description {
+        display: none;
         padding: 0 15px;
+    }
+}
+
+@keyframes opacityInputAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }

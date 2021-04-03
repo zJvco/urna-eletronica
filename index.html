@@ -17,18 +17,18 @@
             <!-- Parte do topo da tela -->
             <div class="topside-view-datas">
                 <div class="leftside-screen">
-                    <h2>SEU VOTO PARA</h2>
+                    <h2 class="title-your-vote">SEU VOTO PARA</h2>
                     <div class="dataInputsCotent">
                         <div class="title-role">
-                            <h2>VEREADOR</h2>
+                            <h2>Vereador</h2>
                         </div>
                         <div class="show-data">
                             <div class="di-1">
-                                <input type="number" id="n-1" readonly>
-                                <input type="number" id="n-2" readonly>
-                                <input type="number" id="n-3" readonly>
-                                <input type="number" id="n-4" readonly>
-                                <input type="number" id="n-5" readonly>
+                                <input type="number" data-opacity="true" id="ns-1" readonly>
+                                <input type="number" data-opacity="false" id="ns-2" readonly>
+                                <input type="number" data-opacity="false" id="ns-3" readonly>
+                                <input type="number" data-opacity="false" id="ns-4" readonly>
+                                <input type="number" data-opacity="false" id="ns-5" readonly>
                             </div>
                             <div class="dd">
                                 <label>Nome: </label>
@@ -37,6 +37,12 @@
                             <div class="dd">
                                 <label>Partido: </label>
                                 <span id="party">DEFG</span>
+                            </div>
+                            <div id="voto-nulo" class="showVoteType">
+                                <h2>Voto Nulo</h2>
+                            </div>
+                            <div id="voto-branco" class="showVoteType">
+                                <h2>Voto em Branco</h2>
                             </div>
                         </div>
                     </div>
@@ -51,6 +57,10 @@
                         <span>Vice-prefeito</span>
                     </div>
                 </div>
+            </div>
+
+            <div class="end-popup">
+                <h2>FIM</h2>
             </div>
 
             <!-- Parte de ajuda -->
@@ -80,9 +90,9 @@
                     <button data-number="0">0</button>
                 </div>
                 <div class="buttonsSendDatas">
-                    <input type="button" id="whiteBtn" value="BRANCO">
-                    <input type="button" id="rectifyBtn" value="CORRIGE">
-                    <input type="button" id="confirmBtn" value="CONFIRMA">
+                    <input type="button" id="brancoBtn" value="BRANCO">
+                    <input type="button" id="corrigeBtn" value="CORRIGE">
+                    <input type="button" id="confirmaBtn" value="CONFIRMA">
                 </div>
             </form>
         </div>
