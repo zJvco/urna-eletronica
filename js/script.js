@@ -34,8 +34,6 @@ const prefeito = [
     }
 ]
 
-const storageVote = [];
-
 const dataNumAll = document.querySelectorAll('[data-number]');
 const ns1 = document.getElementById('ns-1');
 const ns2 = document.getElementById('ns-2');
