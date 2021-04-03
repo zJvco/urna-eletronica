@@ -1,1 +1,250 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap");
+.screen-container {
+  border: 3px solid #403A3A;
+  margin-right: 30px;
+  width: 100%;
+  min-width: 700px;
+  background: -webkit-gradient(linear, left top, right top, from(#FFF), to(#D5D8DC));
+  background: linear-gradient(to right, #FFF, #D5D8DC);
+}
+
+.screen-container .topside-view-datas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  border-bottom: 3px solid #403A3A;
+}
+
+.screen-container .topside-view-datas .leftside-screen {
+  width: 100%;
+  padding: 20px;
+}
+
+.screen-container .topside-view-datas .leftside-screen h2 {
+  font-weight: normal;
+}
+
+.screen-container .topside-view-datas .leftside-screen .dataInputsCotent {
+  margin: 40px 0;
+}
+
+.screen-container .topside-view-datas .leftside-screen .dataInputsCotent .title-role {
+  text-align: center;
+}
+
+.screen-container .topside-view-datas .leftside-screen .dataInputsCotent .show-data {
+  margin: 25px 0;
+}
+
+.screen-container .topside-view-datas .leftside-screen .dataInputsCotent .show-data .di-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 10px 0;
+}
+
+.screen-container .topside-view-datas .leftside-screen .dataInputsCotent .show-data .di-1 input[type=number] {
+  width: 40px;
+  height: 50px;
+  margin: 0 2px;
+  border: 1px solid #403A3A;
+  outline: none;
+  background-color: transparent;
+  text-align: center;
+  font-size: 2rem;
+}
+
+.screen-container .topside-view-datas .leftside-screen .dataInputsCotent .show-data .di-1 input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+          appearance: none;
+}
+
+.screen-container .topside-view-datas .leftside-screen .dataInputsCotent .show-data .dd {
+  margin: 5px 0;
+}
+
+.screen-container .topside-view-datas .rightside-screen {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 5px;
+}
+
+.screen-container .topside-view-datas .rightside-screen .topBiggerImage {
+  border: 2px solid #403A3A;
+  text-align: center;
+  background-color: #FFF;
+}
+
+.screen-container .topside-view-datas .rightside-screen .topBiggerImage img {
+  width: 100%;
+  height: 100%;
+  max-height: 200px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0 0;
+     object-position: 0 0;
+}
+
+.screen-container .topside-view-datas .rightside-screen .bottomSmallImage {
+  width: 80%;
+  margin-top: 5px;
+  border: 2px solid #403A3A;
+  text-align: center;
+  background-color: #FFF;
+}
+
+.screen-container .topside-view-datas .rightside-screen .bottomSmallImage img {
+  width: 80%;
+  height: 100%;
+  max-height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0 0;
+     object-position: 0 0;
+}
+
+.screen-container .help-description {
+  padding: 0 15px;
+}
+
+.keyboard-container {
+  width: 100%;
+  min-width: 300px;
+  background-color: #403A3A;
+}
+
+.keyboard-container .title-urn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-color: #FFF;
+  padding: 10px;
+}
+
+.keyboard-container .title-urn img {
+  width: 50px;
+  height: 50px;
+}
+
+.keyboard-container .title-urn h1 {
+  font-size: 1rem;
+  color: #403A3A;
+  line-height: 20px;
+  margin: 0 20px;
+}
+
+.keyboard-container .form {
+  padding: 20px;
+}
+
+.keyboard-container .form .buttonsNumbers {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+  list-style-type: none;
+}
+
+.keyboard-container .form .buttonsNumbers button {
+  padding: 14px;
+  font-size: 1.2rem;
+  background-color: #000;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.keyboard-container .form .buttonsNumbers :last-child {
+  grid-column-end: 3;
+}
+
+.keyboard-container .form .buttonsSendDatas {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-top: 20px;
+}
+
+.keyboard-container .form .buttonsSendDatas input {
+  padding: 10px;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.keyboard-container .form .buttonsSendDatas :nth-child(1) {
+  background-color: #FFF;
+}
+
+.keyboard-container .form .buttonsSendDatas :nth-child(2) {
+  background-color: #EB984E;
+}
+
+.keyboard-container .form .buttonsSendDatas :nth-child(3) {
+  padding: 15px 10px;
+  background-color: #2ECC71;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+body .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  max-width: 60%;
+  height: 100%;
+  max-height: 550px;
+  padding: 40px;
+  background-color: #FAE5D3;
+  -webkit-box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+          box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+}
+/*# sourceMappingURL=style.css.map */

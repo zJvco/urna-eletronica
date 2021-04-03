@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
+@import './variables';
+@import './screen';
+@import './keyboard';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    @include flexbox;
+    min-height: 100vh;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+
+    .container {
+        @include flexboxJc;
+        width: 100%;
+        max-width: 60%;
+        height: 100%;
+        max-height: 550px;
+        padding: 40px;
+        background-color: $backgroundContainer;
+        box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.4);
+    }
+}

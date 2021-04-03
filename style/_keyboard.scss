@@ -1,0 +1,74 @@
+@import './variables';
+
+.keyboard-container {
+    width: 100%;
+    min-width: 300px;
+    background-color: $backgroundButtonsDisplay;
+
+    .title-urn {
+        @include flexboxAround;
+        text-align: center;
+        background-color: #FFF;
+        padding: 10px;
+
+        img {
+            width: 50px;
+            height: 50px;
+        }
+
+        h1 {
+            font-size: 1rem;
+            color: $backgroundButtonsDisplay;
+            line-height: 20px;
+            margin: 0 20px;
+        }
+    }
+
+    .form {
+        padding: 20px;
+
+        .buttonsNumbers {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 15px;
+            list-style-type: none;
+
+            button {
+                padding: 14px;
+                font-size: 1.2rem;
+                background-color: #000;
+                color: #FFF;
+                cursor: pointer;
+            }
+
+            :last-child {
+                grid-column-end: 3;
+            }
+        }
+
+        .buttonsSendDatas {
+            @include flexboxRowEnd;
+            margin-top: 20px;
+            
+            input {
+                padding: 10px;
+                font-family: "Poppins", Arial, Helvetica, sans-serif;
+                font-size: 1rem;
+                cursor: pointer;
+            }
+
+            :nth-child(1) {
+                background-color: #FFF;
+            }
+
+            :nth-child(2) {
+                background-color: $rectifyBtnBgc;
+            }
+
+            :nth-child(3) {
+                padding: 15px 10px;
+                background-color: $confirmBtnBgc;
+            }
+        }
+    }
+}

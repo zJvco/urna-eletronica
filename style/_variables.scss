@@ -1,3 +1,36 @@
 $backgroundContainer: #FAE5D3;
-$linearGradientScreen: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.6));
+$linearGradientScreen: linear-gradient(to right, #FFF, #D5D8DC);
 $backgroundButtonsDisplay: #403A3A;
+$confirmBtnBgc: #2ECC71;
+$rectifyBtnBgc: #EB984E;
+
+// Flexbox align
+@mixin flexbox() {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flexboxJc() {
+    display: flex;
+    justify-content: center;
+}
+
+@mixin flexboxColummEnd() {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+@mixin flexboxAround() {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+@mixin flexboxRowEnd() {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
