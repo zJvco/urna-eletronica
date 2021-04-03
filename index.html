@@ -9,6 +9,111 @@
     <title>Urna Eletrônica</title>
 </head>
 <body>
-    
+    <div class="container">
+
+        <!-- Tela inteira -->
+        <div class="screen-container">
+
+            <!-- Parte do topo da tela -->
+            <div class="topside-view-datas">
+                <div class="leftside-screen">
+                    <h2>SEU VOTO PARA</h2>
+                    <div class="dataInputsCotent">
+                        <h2>VEREADOR</h2>
+                        <div class="show-data">
+                            <div class="di-1">
+                                <input type="number" id="n-1" readonly>
+                                <input type="number" id="n-2" readonly>
+                                <input type="number" id="n-3" readonly>
+                                <input type="number" id="n-4" readonly>
+                                <input type="number" id="n-5" readonly>
+                            </div>
+                            <div class="dd-1">
+                                <label>Nome</label>
+                                <span id="name">Beltrano da Silva</span>
+                            </div>
+                            <div class="dd-2">
+                                <label>Partido</label>
+                                <span id="party">DEFG</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="rightside-screen">
+                    <div class="topBiggerImage">
+                        <img src="img/people-1.png">
+                        <span>Vereador</span>
+                    </div>
+                    <div class="bottomSmallImage">
+                         <!-- Vice-prefeito -->
+                    </div>
+                </div>
+            </div>
+
+            <!-- Parte de ajuda -->
+            <div class="help-description">
+                <span>Aperte a tela: <br> CONFIRMA para CONFIRMAR este voto <br> CORRIGE para REINICIAR este voto</span>
+            </div>
+
+        </div>
+
+
+        <div class="keyboard-container">
+            <div class="title-urn">
+                <img src="img/logo-justiça-eleitoral.jpg" alt="logo">
+                <h1>JUSTIÇA <br> ELEITORAL</h1>
+            </div>
+            <form action="#" class="form">
+                <div class="buttonsNumbers">
+                    <ul>
+                        <li>
+                            <button data-number="1">1</button>
+                        </li>
+                        <li>
+                            <button data-number="2">2</button>
+                        </li>
+                        <li>
+                            <button data-number="3">3</button>
+                        </li>
+                        <li>
+                            <button data-number="4">4</button>
+                        </li>
+                        <li>
+                            <button data-number="5">5</button>
+                        </li>
+                        <li>
+                            <button data-number="6">6</button>
+                        </li>
+                        <li>
+                            <button data-number="7">7</button>
+                        </li>
+                        <li>
+                            <button data-number="8">8</button>
+                        </li>
+                        <li>
+                            <button data-number="9">9</button>
+                        </li>
+                        <li>
+                            <button data-number="0">0</button>
+                        </li>
+                    </ul>
+                </div>
+                <div class="buttonsSendDatas">
+                    <ul>
+                        <li>
+                            <input type="button" id="whiteBtn" value="BRANCO">
+                        </li>
+                        <li>
+                            <input type="button" id="rectifyBtn" value="CORRIGE">
+                        </li>
+                        <li>
+                            <input type="button" id="confirmBtn" value="CONFIRMA">
+                        </li>
+                    </ul>
+                </div>
+            </form>
+        </div>
+
+    </div>
 </body>
 </html>
